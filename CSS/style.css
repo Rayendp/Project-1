@@ -44,7 +44,7 @@ a {
 }
 
 a:visited {
-    color: blue
+    color: green
 }
 
 a:hover 
@@ -52,12 +52,31 @@ a:focus-visible {
     color: purple
 }
 
+ul,
+ol {
+    color: red;
+}
+
+li {
+    margin-block: 5px;
+    color: black;
+}
+
+ul li::marker {
+    content: '🎶';
+}
+
 a:active {
-    color: black
+    color: black;
 }
 
 section {
     margin-block: 100px;
+}
+
+.container {
+    max-inline-size: 1000px;
+    margin-inline: auto;
 }
 
 .teal-text {
@@ -71,6 +90,20 @@ section {
     background-color: #087a98;
 }
 
+.teal-bg strong {
+    color: yellow
+}
+
+.climber-bg {
+    color: white;
+    background-image: url("../images/simple-steps.jpg");
+    padding: 24px;
+    border: #0b4a5a solid 10px;
+    
+    background-repeat: no-repeat ;
+    background-position: center ;
+    background-size: cover;
+}
 
 footer {
      text-align: center;
